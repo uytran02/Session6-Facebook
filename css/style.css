@@ -1,0 +1,43 @@
+@import "./header.css";
+@import "./left.css";
+@import "./center.css";
+@import "./right.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    display: grid;
+    flex-direction: column;
+    height: 100vh;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-rows: 60px calc(100vh - 60px);
+}
+
+.header {
+    background-color: white;
+    height: 60px;
+    grid-column: 1/4;
+}
+
+
+.aside-left {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+}
+
+.main-center {
+    grid-row: 2/3;
+
+}
+
+.aside-right {
+    grid-row: 2/3;
+
+}
